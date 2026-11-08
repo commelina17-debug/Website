@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sun Journal</title>
     <style>
+        @font-face {
+            font-family: roboto;
+            src: url("../Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+        }
         #star{
             color: white;
         }
@@ -21,16 +25,18 @@
             margin-right: -10px;
         }
         .container-1{
-            display: flex;
             height: 50px;
+            display: flex;
+            
         }
         .theSunday{
             font-size: 27px;
             font-weight: bold;
             font-family: 'serif',sans-serif monospace;
             color: black;
-            margin-left: 80px;
+            margin-left: 10%;
             display: inline-block;
+            line-height: 50px;
         }
         .theSunday span{
             color:coral;
@@ -50,20 +56,55 @@
         a:hover{
             color: coral;
         }
-        /* .nav.home{
-            float: right;
-        }
-        .nav.journal{
-            float: right;
-        }
-        .nav.about{
-            float: right;
-        }
-        .nav.subscribe{
-            float: right;
-        } */
         .nav.home{
-            margin-left: 1100px;
+            margin-left: 55%;
+        }
+        .imgpart{
+            position: relative;
+            width: 80%;
+            height: 400px;
+            margin-left: 10%;
+            border: 1px solid black;
+        }
+        .mainimg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block; 
+
+        }
+        .photopicker{
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            background-color:floralwhite;
+            left: 2%;
+            top:5%;
+        }
+        .photopicker p{
+            font-family:roboto;
+            text-align: center;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+        .picfeature{
+            position: absolute;
+            bottom: 5%;
+            left: 2%;
+        }
+        .p1{
+            color:burlywood;
+            letter-spacing: 2px;
+            font-family: roboto;
+            font-size: 15px;
+        }
+        .picfeature h1{
+            color: white;
+            line-height: 10px;
+        }
+        .p2{
+            color: white;
         }
 
     </style>
@@ -78,8 +119,20 @@
         <div class="nav subscribe"><a class="subscribe" href="">Subscribe</a></div>
     </div>
     <hr>
-    <p style="text-align: center; font-size: 10px;">STORIES WORTH SLOWING DOWN FOR</p>
-    <h1 style="text-align: center;">The Sunday Journal</h1>
+    <p style="text-align: center; font-size: 10 px;">STORIES WORTH SLOWING DOWN FOR</p>
+    <h1 style="text-align: center; line-height: 10px;">The Sunday Journal</h1>
     <p style="text-align: center; font-size: 10px;">A thoughtful collection of stories about life, creativity and everything in between.</p>
+    <br>
+    <div class="imgpart">
+        <img class="mainimg" src="../Photos/mainForest.jpg" alt="">
+        <div class="photopicker">
+            <p>EDITOR'S PICK</p>
+        </div>
+        <div class="picfeature">
+            <p class="p1">NATURE & SLOW LIVING</p>
+            <h1>Finding Beauty in the Quiet Moments</h1>
+            <p class="p2">November 8,2026 &#8226 6 min read</p>
+        </div>
+    </div>
 </body>
 </html>
