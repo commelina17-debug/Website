@@ -108,12 +108,39 @@
         }
         .article-container{
              margin-left: 10%;
-             width: 80%;
+             width: 60%;
+             
         }
-        .article-container h3{
-            font-size: 25px;
-            border-bottom: 1px solid coral;
-            padding: 25px;
+        #article{
+            height: 330px;
+            border-top: 1px solid coral;
+        }
+        #article img{
+            width: 500px; height: 250px; 
+            float: left; 
+            margin-right: 40px; margin-bottom: 10px;
+        }
+        .article-type{
+            color: burlywood;
+            font-family: roboto;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+        #article h4{
+            font-family:'serif' sans-serif;
+            font-size: 30px;
+            line-height: 0px;
+        }
+        .content{
+            font-family: roboto;
+            font-size: 15px;
+            line-height: 30px;
+            opacity: 0.7;
+        }
+        #article pre{
+            font-family: roboto;
+            font-size: 12px;
+            opacity: 0.5;
         }
 
     </style>
@@ -145,7 +172,33 @@
     </div>
     <br><br>
     <section class="article-container">
-        <h3>Latest Stories</h3>
+        <h3 style="font-size: 25px;">Latest Stories</h3>
+        <article id="article">
+            <br><br>
+            <img src="../Photos/slow-morning.jpg" alt="">
+            <p class="article-type">LIFESTYLE</p>
+            <h4>The Art of Slow Mornings</h4>
+            <p class="content">Discover how a peaceful morning routine can change the way you
+                experience every single day.</p>
+            <pre>NOV 5, 2026  &#8226  5 MIN READ</pre>
+        </article>
+
+        <article id="article">
+            <br><br>
+            <img src="../Photos/myeik-island.jpeg" alt="">
+            <p class="article-type">TRAVEL</p>
+            <h4>Places That Make You Feel Alive</h4>
+            <p class="content">From peaceful lakes to hidden mountain trails, explore places that inspire a sense of wonder.</p>
+            <pre>NOV 2, 2026  &#8226  7 MIN READ</pre>
+        </article>
+        <article id="article">
+            <br><br>
+            <img src="../Photos/workspace.jpeg" alt="">
+            <p class="article-type">CREATIVITY</p>
+            <h4>Creating Space for New Ideas</h4>
+            <p class="content">A beautiful workspace is more than decoration. Learn how your surrounding can spark creativity.</p>
+            <pre>OCT 28, 2026  &#8226  4 MIN READ</pre>
+        </article>
     </section>
 </body>
 </html>
