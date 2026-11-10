@@ -106,10 +106,18 @@
         .p2{
             color: white;
         }
-        .article-container{
+
+        .content-container{
              margin-left: 10%;
-             width: 60%;
-             
+             width: 80%;
+             display: flex;
+             GAP: 20px;
+        }
+        .article-container{
+            flex: 3;
+        }
+        .aside-part{
+            flex: 1;
         }
         #article{
             height: 330px;
@@ -142,6 +150,24 @@
             font-size: 12px;
             opacity: 0.5;
         }
+        .aside-article{
+            height:fit-content;
+            background-color:antiquewhite;
+        }
+        .aside-article h5,p, img, a{
+            padding: 20px;
+        }
+        .aside-article h5{
+            font-family: 'serif' sans-serif;
+            font-size: 20px;
+            line-height: 0px;
+        }
+        .aside-article img{
+            width: 300px;
+            height: 200px;
+        }
+
+        
 
     </style>
 </head>
@@ -171,34 +197,48 @@
         </div>
     </div>
     <br><br>
-    <section class="article-container">
-        <h3 style="font-size: 25px;">Latest Stories</h3>
-        <article id="article">
-            <br><br>
-            <img src="../Photos/slow-morning.jpg" alt="">
-            <p class="article-type">LIFESTYLE</p>
-            <h4>The Art of Slow Mornings</h4>
-            <p class="content">Discover how a peaceful morning routine can change the way you
-                experience every single day.</p>
-            <pre>NOV 5, 2026  &#8226  5 MIN READ</pre>
-        </article>
+    <!-- content part -->
+    <main>
+        <div class="content-container">
+            <section class="article-container">
+                <h3 style="font-size: 25px;">Latest Stories</h3>
+                <article id="article">
+                    <br><br>
+                    <img src="../Photos/slow-morning.jpg" alt="">
+                    <p class="article-type">LIFESTYLE</p>
+                    <h4>The Art of Slow Mornings</h4>
+                    <p class="content">Discover how a peaceful morning routine can change the way you
+                    experience every single day.</p>
+                    <pre>NOV 5, 2026  &#8226  5 MIN READ</pre>
+                </article>
 
-        <article id="article">
-            <br><br>
-            <img src="../Photos/myeik-island.jpeg" alt="">
-            <p class="article-type">TRAVEL</p>
-            <h4>Places That Make You Feel Alive</h4>
-            <p class="content">From peaceful lakes to hidden mountain trails, explore places that inspire a sense of wonder.</p>
-            <pre>NOV 2, 2026  &#8226  7 MIN READ</pre>
-        </article>
-        <article id="article">
-            <br><br>
-            <img src="../Photos/workspace.jpeg" alt="">
-            <p class="article-type">CREATIVITY</p>
-            <h4>Creating Space for New Ideas</h4>
-            <p class="content">A beautiful workspace is more than decoration. Learn how your surrounding can spark creativity.</p>
-            <pre>OCT 28, 2026  &#8226  4 MIN READ</pre>
-        </article>
-    </section>
+                <article id="article">
+                    <br><br>
+                    <img src="../Photos/myeik-island.jpeg" alt="">
+                    <p class="article-type">TRAVEL</p>
+                    <h4>Places That Make You Feel Alive</h4>
+                    <p class="content">From peaceful lakes to hidden mountain trails, explore places that inspire a sense of wonder.</p>
+                    <pre>NOV 2, 2026  &#8226  7 MIN READ</pre>
+                 </article>
+                <article id="article">
+                    <br><br>
+                    <img src="../Photos/workspace.jpeg" alt="">
+                    <p class="article-type">CREATIVITY</p>
+                    <h4>Creating Space for New Ideas</h4>
+                    <p class="content">A beautiful workspace is more than decoration. Learn how your surrounding can spark creativity.</p>
+                    <pre>OCT 28, 2026  &#8226  4 MIN READ</pre>
+                </article>
+            </section>
+            <aside class="aside-part">
+                    <article class="aside-article">
+                        <h5>Meet the Writer</h5>
+                        <img src="../Photos/writer.jpg" alt="">
+                        <h5>Hello, I'm Emma.</h5>
+                        <p>A writer and creative soul sharing little stories about meaningful living, everyday inspiration and finding joy in simple things.</p>
+                        <a href="">MORE ABOUT ME &#8594</a>
+                    </article>
+            </aside>
+        </div>
+    </main>
 </body>
 </html>
