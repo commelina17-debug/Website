@@ -13,9 +13,8 @@
             color: white;
         }
         .top_most{
-            border:1px solid darkslategray;
             height: 25px;
-            background-color:darkslategray;
+            background-color:#0D3526;
             color: white;
             font-size: small;
             line-height: 25px;
@@ -53,7 +52,7 @@
             color: black;
             line-height: 50px;
         }
-        a:hover{
+        .nav a:hover{
             color: coral;
         }
         .nav.home{
@@ -109,22 +108,26 @@
 
         .content-container{
              margin-left: 10%;
-             width: 80%;
+             margin-right: 10%;
              display: flex;
-             GAP: 20px;
+             gap: 40px;
         }
         .article-container{
             flex: 3;
         }
-        .aside-part{
+        .side{
             flex: 1;
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
         }
+
         #article{
             height: 330px;
-            border-top: 1px solid coral;
+            border-top: 1px solid #ddd8ce;
         }
         #article img{
-            width: 500px; height: 250px; 
+            width: 400px; height: 250px; 
             float: left; 
             margin-right: 40px; margin-bottom: 10px;
         }
@@ -150,23 +153,143 @@
             font-size: 12px;
             opacity: 0.5;
         }
+        
         .aside-article{
-            height:fit-content;
-            background-color:antiquewhite;
-        }
-        .aside-article h5,p, img, a{
+            
+            height: fit-content;
+            background-color:whitesmoke;
             padding: 20px;
+            box-sizing: border-box;
         }
         .aside-article h5{
             font-family: 'serif' sans-serif;
             font-size: 20px;
             line-height: 0px;
         }
-        .aside-article img{
-            width: 300px;
-            height: 200px;
+        #heading-1{
+            padding-bottom: 25px;
+            margin-top:20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd8ce;
+        }
+        #heading-2{
+            margin-bottom: 5;
         }
 
+        .aside-article img{
+            width: 100%;
+            height: auto;
+        }
+        .aside-article p{
+            line-height: 25px;
+            opacity: 0.7;
+        }
+        .aside-article a{
+            color:sienna;
+            text-underline-offset: 5px;
+        }
+        .aside-article a:hover{
+            color: coral;
+        }
+        .aside-article ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #topist-list li{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+        }
+        #topist-list li:not(:last-child){
+            border-bottom: 1px solid #ddd8ce;
+        }
+        #topist-list li span:last-child{
+            color:#999;
+        }
+        #popular-read-list{
+            list-style-type: decimal-leading-zero;  
+        }
+        #popular-read-list li p:first-child{
+            font-family: serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #popular-read-list li p:last-child{
+            font-size: 15px;
+            opacity: 0.7;
+            
+        }
+        .below-part{
+            margin-top: 50px;
+            background-color: #0D3526;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #footer-p1{
+            color: burlywood; font-family: monospace;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            padding-top: 30px;
+        }
+        #footer-p2{
+            color: white;
+            font-family: monospace;
+
+        }
+        .below-part h1{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            
+            color: white;
+            font-family: serif;
+            word-spacing: 3px;
+        }
+        .below-part form{
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .input-email{
+            width: 400px;
+            height: 40px;
+            box-sizing: border-box;
+            border: none;
+        }
+        .email-submit{
+            width: 150px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: burlywood;
+            color: white;
+            border: none;
+        }
+        footer{
+            height: 30px;
+            background-color: #071E15;
+            color: white;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+        footer p{
+            margin: 0;
+            padding-left: 10%;
+        }
+        .footer-nav{
+            margin-left: auto;
+            padding-right: 10%;
+        }
+        .footer-nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .footer-nav a:hover{
+            color: coral;
+        }
         
 
     </style>
@@ -201,7 +324,7 @@
     <main>
         <div class="content-container">
             <section class="article-container">
-                <h3 style="font-size: 25px;">Latest Stories</h3>
+                <h3 style="font-size: 25px; line-height: 10px;">Latest Stories</h3>
                 <article id="article">
                     <br><br>
                     <img src="../Photos/slow-morning.jpg" alt="">
@@ -229,16 +352,75 @@
                     <pre>OCT 28, 2026  &#8226  4 MIN READ</pre>
                 </article>
             </section>
-            <aside class="aside-part">
-                    <article class="aside-article">
-                        <h5>Meet the Writer</h5>
-                        <img src="../Photos/writer.jpg" alt="">
-                        <h5>Hello, I'm Emma.</h5>
-                        <p>A writer and creative soul sharing little stories about meaningful living, everyday inspiration and finding joy in simple things.</p>
-                        <a href="">MORE ABOUT ME &#8594</a>
-                    </article>
-            </aside>
+            <div class="side">
+                <aside class="aside-article">
+                    <h5 id="heading-1">Meet the Writer</h5>
+                    <img src="../Photos/writer.jpg" alt="">
+                    <h5 id="heading-2">Hello, I'm Emma.</h5>
+                    <p>A writer and creative soul sharing little stories about meaningful living, everyday inspiration and finding joy in simple things.</p>
+                    <a href="">MORE ABOUT ME &#8594</a>  
+                </aside>
+                <aside class="aside-article">
+                    <h5 id="heading-1">Explore Topics</h5>
+                    <ul id="topist-list">
+                        <li>
+                            <span>Lifestyle</span>
+                            <span>12</span>
+                        </li>
+                        <li>
+                            <span>Travel</span>
+                            <span>08</span>
+                        </li>
+                        <li>
+                            <span>Creativity</span>
+                            <span>15</span>
+                        </li>
+                        <li>
+                            <span>Wellness</span>
+                            <span>06</span>
+                        </li>
+                        <li>
+                            <span>Personal Stories</span>
+                            <span>09</span>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="aside-article">
+                    <h5 id="heading-1">Popular Reads</h5>
+                    <ol id="popular-read-list">
+                        <li>
+                            <p>Little Things That Bring Us Joy</p>
+                            <p>OCT 20, 2026</p>
+                        </li>
+                        <li>
+                            <p>A Weekend Away From Everything</p>
+                            <p>OCT 15, 2026</p>
+                        </li>
+                        <li>
+                            <p>How To Find Your Inspiration</p>
+                            <p>OCT 10, 2026</p>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
         </div>
     </main>
+    <div class="below-part">
+        <p id="footer-p1">A LITTLE NOTE FROM ME TO YOU</p>
+        <h1>Let's Stay Inspired.</h1>
+        <p id="footer-p2">Thoughtful stories deliverd straight to your inbox, every Sunday.</p>
+        <form>
+            <input class="input-email" type="email" placeholder=" Enter your email address" required>
+            <button class="email-submit" type="submit">SUBSCRIBE &#8594</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 The Sunday Journal. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
 </body>
 </html>
