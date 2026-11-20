@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f7f2ea;
+      }
+      .intro {
+        width: 80%;
+        max-width: 1200px;
+        min-width: 600px;
+        height: 30%;
+        max-height: 600px;
+        min-width: 200px;
+        display: flex;
+        padding: 5px;
+        margin: auto;
+        background-color: #1c2b5a;
+        color: white;
+        border-radius: 5px;
+      }
+      .intro img {
+        width: 45%;
+        height: 100%;
+        flex-direction: column;
+        border-radius: 5px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .text h1,
+      h4 {
+        letter-spacing: 2px;
+        line-height: 5px;
+      }
+      .text p {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      .links {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        transform: translateY(70px);
+      }
+      .links a {
+        color: coral;
+        font-size: 25px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: coral;
+      }
+      #headings {
+        text-align: center;
+        line-height: 10vh;
+        color: #1c2b5a;
+      }
+      .about-part {
+        display: flex;
+        gap: 100px;
+        width: 80%;
+        margin: auto;
+      }
+      .about-text {
+        flex-direction: column;
+        color: #1c2b5a;
+      }
+      .about-text h1,
+      h2 {
+        line-height: 15px;
+      }
+      .about-part p {
+        font-size: 20px;
+        line-height: 30px;
+        word-break: keep-all;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+      }
+      #round-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10%;
+        margin-top: 5%;
+        flex-direction: column;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="intro">
+      <div class="text">
+        <h4>HELLO THERE</h4>
+        <h1>I am Juli -Web Designer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. S aepe,
+          voluptatem.
+        </p>
+        <div class="links">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <img src="../Photos/pmp.jpg" alt="" />
+    </section>
+    <h1 id="headings">About Me</h1>
+    <section class="about-part">
+      <img id="round-photo" src="../Photos/pmp.jpg" alt="" />
+      <div class="about-text">
+        <h1>Juli</h1>
+        <h2>Web Designer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          provident debitis culpa obcaecati quidem laboriosam corrupti dolores
+          illo minus sint, maiores architecto voluptatibus quisquam, dolorum sed
+          aliquam, nesciunt ullam cum! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Vel veniam perferendis voluptatibus temporibus
+          eveniet, odio labore dicta. Iusto cum minima aperiam? Ipsum vero
+          numquam repellat perferendis maiores unde sunt. Et.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h1 id="headings">My Skills</h1>
+    </section>
+  </body>
+</html>
