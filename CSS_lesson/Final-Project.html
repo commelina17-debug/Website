@@ -19,7 +19,7 @@
         padding: 5px;
         margin: auto;
         background-color: #1c2b5a;
-        color: white;
+        color: #f7f2ea;
         border-radius: 5px;
       }
       .intro img {
@@ -57,7 +57,7 @@
         transition: 0.3s;
       }
       a:hover {
-        color: coral;
+        color: #f7f2ea;
       }
       #headings {
         text-align: center;
@@ -93,6 +93,78 @@
         margin-left: 10%;
         margin-top: 5%;
         flex-direction: column;
+      }
+      .skill-content {
+        display: flex;
+        margin: 0 10% 0 10%;
+      }
+      .skill-content > div {
+        flex-basis: 50%;
+      }
+      .skill-text ul {
+        list-style-type: none;
+        margin-bottom: 50px;
+      }
+      .skill-text h2 {
+        color: #1c2b5a;
+      }
+      .skill-text ul li {
+        margin: 5px 5px 5px 0;
+        background-color: #1c2b5a;
+        color: #f7f2ea;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 5px 10px;
+      }
+      .skill-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .skill-photo img {
+        width: 400px;
+        height: 250px;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+      }
+      #card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        border-radius: 10px;
+        padding: 20px 10px;
+        text-align: center;
+        background-color: #1c2b5a;
+        color: #f7f2ea;
+      }
+      #card h3 {
+        line-height: 10px;
+      }
+      #contact-icon,
+      .contact-info {
+        display: inline-block;
+        padding: 0 5px;
+        color: #1c2b5a;
+      }
+      .form-container {
+        border: 1px solid black;
+        display: inline-block;
+      }
+      #name,
+      #email {
+        width: 45%;
+        height: 20px;
+        margin-left: 2%;
+        border-radius: 5px;
+      }
+      #message {
+        width: 92%;
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 10px;
       }
     </style>
     <link
@@ -142,8 +214,102 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="skill-section">
       <h1 id="headings">My Skills</h1>
+      <div class="skill-content">
+        <div class="skill-text">
+          <h2>Front End</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Vue</li>
+          </ul>
+          <h2>Back End</h2>
+          <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Node.Js</li>
+            <li>Laravel</li>
+            <li>Java</li>
+          </ul>
+          <h2>Design UI/UX & Others</h2>
+          <ul>
+            <li>AdobeXD</li>
+            <li>Figma</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+          </ul>
+        </div>
+        <div class="skill-photo">
+          <img src="../Photos/writer.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 id="headings">My Works</h1>
+      <div class="card-container">
+        <div id="card">
+          <div><i class="fa-solid fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            quas molestiae provident? Cumque iste libero fugit, totam aut ut!
+            Dolore nobis corrupti quidem incidunt numquam totam quisquam sed
+            dicta perspiciatis!
+          </p>
+        </div>
+        <div id="card">
+          <div><i class="fa-solid fa-web-awesome"></i></div>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            quas molestiae provident? Cumque iste libero fugit, totam aut ut!
+            Dolore nobis corrupti quidem incidunt numquam totam quisquam sed
+            dicta perspiciatis!
+          </p>
+        </div>
+        <div id="card">
+          <div><i class="fa-solid fa-palette"></i></div>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            quas molestiae provident? Cumque iste libero fugit, totam aut ut!
+            Dolore nobis corrupti quidem incidunt numquam totam quisquam sed
+            dicta perspiciatis!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 id="headings">Contact Me</h1>
+      <div class="card-container">
+        <div>
+          <div>
+            <div id="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <p class="contact-info">juli@gmail.com</p>
+          </div>
+          <div>
+            <div id="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <p class="contact-info">09123456789</p>
+          </div>
+          <div>
+            <div id="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="contact-info">Yangon, Burma</p>
+          </div>
+        </div>
+        <div class="form-container">
+          <form>
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="textarea" id="message" placeholder="Message..." />
+            <button id="send">Send</button>
+          </form>
+        </div>
+      </div>
     </section>
   </body>
 </html>
